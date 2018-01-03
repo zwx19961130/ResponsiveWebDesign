@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>布局移动</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="../content/layout-shifter.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!-- Navigation Bar example -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand mylogo" href="#">布局移动</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#id-main-navbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="id-main-navbar">
+                <ul class="nav navbar-nav">
+                    <li role="presentation" class="active"><a href="../index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 主页</a></li>
+                    <li role="presentation"><a href="#id-header">头部分</a></li>
+                    <li role="presentation"><a href="#id-articles-column">主要部分</a></li>
+                    <li role="presentation"><a href="#id-keyfacts-column">关键事实部分</a></li>
+                    <li role="presentation"><a href="#id-grdconfig-column">网格设置部分</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Lets go for the BS grid -->
+    <div class="container-fluid mymaincontainer">
+
+        <!-- Cool header! -->
+        <div class="row">
+            <!-- Cool Header Example -->
+            <header class="jumbotron myheader text-right" id="id-header">
+                <h1>布局移动</h1>
+                <h3>实例 <em>布局移动</em> 模式</h3>
+            </header>
+        </div>
+
+        <!-- Page in 3 columns -->
+        <div class="row mycontentarea">
+
+            <!-- KeyFacts section -->
+            <div class="col-md-4 myasidearea" id="id-keyfacts-column">
+                <aside class="mykeyfactsarea">
+                    <h3><span class="glyphicon glyphicon-star mytitleicon"></span> 关键事实</h3>
+                    <p>使用了如下的模式</p>
+                    <div class="panel-group" id="id-accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading collapse-with-chevron collapsed" data-toggle="collapse" data-parent="#id-accordion" href="#id-collapse1">
+                                <h4 class="panel-title">网格布局</h4>
+                            </div>
+                            <div id="id-collapse1" class="panel-collapse collapse">
+                                <div class="panel-body">该网站的布局基于bootstrap网格布局</div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading collapse-with-chevron collapsed" data-toggle="collapse" data-parent="#id-accordion" href="#id-collapse2">
+                                <h4 class="panel-title">多列布局</h4>
+                            </div>
+                            <div id="id-collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">主页被分为2列。文章部分跨度为8</div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading collapse-with-chevron collapsed" data-toggle="collapse" data-parent="#id-accordion" href="#id-collapse3">
+                                <h4 class="panel-title">最大的宽度</h4>
+                            </div>
+                            <div id="id-collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">最大宽度被设置为 1140px. 对于大的 viewport 大小来说, 网页的宽度不会持续增长, 边缘被加入到两边.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading collapse-with-chevron collapsed" data-toggle="collapse" data-parent="#id-accordion" href="#id-collapse4">
+                                <h4 class="panel-title">最小大小堆栈</h4>
+                            </div>
+                            <div id="id-collapse4" class="panel-collapse collapse">
+                                <div class="panel-body">一旦我们到达了最小的视口,网格就会变化成单一的列布局.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Container column -->
+            <div class="col-md-8">
+
+                <!-- Main article section -->
+                <div class="mymarticlearea" id="id-articles-column">
+                    <article>
+                       
+                        <div class="page-header">
+                            <h2>响应式设计 <small>和适应性布局模式</small></h2>
+                        </div>
+                        <p><abbr title="Responsive Web Design">RWD</abbr> 这是一种web设计的方法，它的目的是让桌面网页能够被浏览，以回应一个正在浏览的屏幕或网页浏览器的大小。因此,使用响应设计
+                            技术，webpages布局能够适应 <strong>各种的屏幕大小</strong>.</p>
+
+                        <p>
+                            这种设计方法的一个关键部分是使用 <strong>流体,proportion-based网格</strong>. 流体网格概念需要页面元素的大小 <strong>relative units</strong> 像百分比,
+                            而不是像像素或点这样的绝对单位。为此，空间被划分为一个行列的样式模式，其中几个元素可以共享相同的内容
+                            行跨越一个或多个列。
+                        </p>
+                        <p>响应式设计的实现导致了设计人员经常使用的一组常见的布局。从高层次的角度来看，我们可以将它们分为5类: <em>最具有流动性</em>, <em>列下拉</em>, <em>布局移动</em>,
+                            <em>微小的调整</em> 和 <em>canvas</em></p>
+
+                    </article>
+                    <article>
+                        <div class="page-header">
+                            <h2>最具有流动性布局</h2>
+                        </div>
+                        <p>最受欢迎的模式可能是令人惊讶的简单:一个多栏布局，在大屏幕上引入更大的利润空间，依赖于流体网格和图像，从大屏幕缩小到小屏幕尺寸和堆栈。
+                            垂直于最窄的圆柱。</p>
+                        <div class="thumbnail">
+                            <img class="hue-shift-img" src="http://static.lukew.com/md-patterns1.png" alt="Mostly Fluid arrangement picture">
+                            <div class="caption">
+                                <h4>主要是流体行为说明</h4>
+                                <p>在最小的屏幕宽度之前，布局的核心结构是不会改变的。相反，该设计主要依赖于流体网格来适应各种屏幕尺寸。</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Grid Config Column -->
+                <div class="" id="id-grdconfig-column">
+                    <aside class="mygridconfigarea">
+                        <h3><span class="glyphicon glyphicon-th mytitleicon"></span> 网格布局</h3>
+                        <p>以下是用于运行此布局的网格设置:</p>
+                        <div class="list-group">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">关键事实列</div>
+                                <table class="table mytable">
+                                    <tr>
+                                        <th>XS</th>
+                                        <th>SM</th>
+                                        <th>MD</th>
+                                        <th>LG</th>
+                                    </tr>
+                                    <tr>
+                                        <td>主列</td>
+                                        <td>-</td>
+                                        <td>4</td>
+                                        <td>-</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">网格布局列</div>
+                                <table class="table mytable">
+                                    <tr>
+                                        <th>XS</th>
+                                        <th>SM</th>
+                                        <th>MD</th>
+                                        <th>LG</th>
+                                    </tr>
+                                    <tr>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>8</td>
+                                        <td>-</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="panel panel-default panel-indented">
+                                <div class="panel-heading">主列</div>
+                                <table class="table mytable">
+                                    <tr>
+                                        <th>XS</th>
+                                        <th>SM</th>
+                                        <th>MD</th>
+                                        <th>LG</th>
+                                    </tr>
+                                    <tr>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="panel panel-default panel-indented">
+                                <div class="panel-heading">网格布局列</div>
+                                <table class="table mytable">
+                                    <tr>
+                                        <th>XS</th>
+                                        <th>SM</th>
+                                        <th>MD</th>
+                                        <th>LG</th>
+                                    </tr>
+                                    <tr>
+                                        <td>自定义动作</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Simple footer -->
+    <footer class="container-fluid footer">
+        
+        <a href="mailto:fjcalzadosp@gmail.com">
+            <button type="button" class="btn btn-default pull-right contact-button"><span class="glyphicon glyphicon-envelope"></span>  联系我</button>
+        </a>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
